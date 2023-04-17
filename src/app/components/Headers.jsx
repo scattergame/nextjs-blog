@@ -1,6 +1,9 @@
+"use client"
 import { MenuItem } from "./MenuItem"
 import { AiFillHome }  from 'react-icons/ai'
 import { BsInfoCircleFill }  from 'react-icons/Bs'
+import { DarkModeSwitch } from "./DarkModeSwitch"
+import { ThemeProvider } from 'next-themes'
 import Link from "next/link"
 
 export const Header = () => {
@@ -10,7 +13,10 @@ export const Header = () => {
                 <MenuItem title="HOME" address="/" Icon={AiFillHome}/>
                 <MenuItem title="ABOUT" address="/about" Icon={BsInfoCircleFill}/>
             </div>
-            <div>
+            <div className="flex items-center space-x-5">
+                <ThemeProvider enableSystem={true} attribute="class">
+                    <DarkModeSwitch />
+                </ThemeProvider>
                 <Link href='/'>
                     <h2 className="text-2xl">
                         <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">IMDb</span>

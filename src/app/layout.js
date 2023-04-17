@@ -1,5 +1,5 @@
 import './globals.css'
-import { Header } from './components/Header'
+import { Header } from './components/Headers'
 
 export const metadata = {
   title: 'IMDb-Clone',
@@ -10,14 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {}
-        <Header />
-        {}
-        {}
-        {}
-        {children}
-        
+      <body className=''>
+          <Header />
+          {children}
       </body>
     </html>
   )
