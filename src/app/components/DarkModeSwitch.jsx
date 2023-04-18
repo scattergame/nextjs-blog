@@ -17,9 +17,9 @@ export const DarkModeSwitch = () => {
           mounted && (
             <div className="cursor-pointer">
               {currentTheme === "dark" ? 
-                <MdLightMode className="text-xl hover:text-amber-600"
+                <MdLightMode className="text-2xl hover:text-amber-600"
                   onClick={() => setTheme("light")} /> :
-                <BsFillMoonFill className="text-xl hover:text-amber-600"
+                <BsFillMoonFill className="text-2xl hover:text-amber-600"
                   onClick={() => setTheme("dark")}
                 />
               }

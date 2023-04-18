@@ -6,12 +6,12 @@ import { DarkModeSwitch } from "./darkModeswitch"
 
 export const Header = () => {
     return (
-        <div className="flex justify-between mx-2 max-w-6xl sm:max-auto items-center py-6">
+        <div className="flex justify-between mx-2 max-w-6xl sm:max-auto items-center py-6 select-none">
             <div className="flex">
                 <MenuItem title="HOME" address="/" Icon={AiFillHome}/>
                 <MenuItem title="ABOUT" address="/about" Icon={BsInfoCircleFill}/>
             </div>
-            <div className="flex space-x-2 items-center">
+            <div className="flex space-x-6 items-center">
                 <DarkModeSwitch/>
                 <Link href='/'>
                     <h2 className="text-2xl">

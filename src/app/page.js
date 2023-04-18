@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ children }) {
   return (
-    <h1 className='text-red-600'>HOME PAGE</h1>
+    <div>{ children }</div>
   )
 }
