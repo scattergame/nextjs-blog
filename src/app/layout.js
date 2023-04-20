@@ -2,6 +2,7 @@ import "./globals.css";
 import { Header } from "./components/header";
 import { Providers } from "./providers";
 import { Navbar } from "./components/Navbar";
+import { AuthContextProvider } from "@/context/AuthContext";
 
 export const metadata = {
   title: "IMDb-Clone",
@@ -13,12 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <Header />
-          <Navbar />
-
-          {children}
-        </Providers>
+        <AuthContextProvider>
+          <Providers>
+            <Header />
+            <Navbar />
+            {children}
+          </Providers>
+        </AuthContextProvider>
       </body>
     </html>
   );

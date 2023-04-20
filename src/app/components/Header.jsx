@@ -1,8 +1,10 @@
+"use client";
 import { MenuItem } from "./menuitem";
 import { AiFillHome } from "react-icons/ai";
 import { BsInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";
 import { DarkModeSwitch } from "./darkModeswitch";
+import { Signin_signout } from "./signin_signout";
 
 export const Header = () => {
   return (
@@ -21,6 +23,7 @@ export const Header = () => {
             <span className="text-xl hidden sm:inline">Clone</span>
           </h2>
         </Link>
+        <Signin_signout />
       </div>
     </div>
   );
