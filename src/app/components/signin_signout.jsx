@@ -23,7 +23,10 @@ export const Signin_signout = () => {
     <div>
       {user ? (
         <div className="flex items-center space-x-2">
-          <FaUserAlt className="text-xl hover:text-amber-600" />
+          <Link href={"/userprofile"}>
+            <FaUserAlt className="text-xl hover:text-amber-600" />
+          </Link>
+
           <button onClick={handleSignOut} className=" hover:text-amber-600">
             Sign Out
           </button>
