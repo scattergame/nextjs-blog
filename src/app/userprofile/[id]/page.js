@@ -13,6 +13,7 @@ function Page() {
   if (user === null) {
     return router.push("/");
   }
+
   const [displayName, setdisplayName] = React.useState(user.displayName);
   const [photoURL, setphotoURL] = React.useState(user.photoURL);
   const [phone, setphone] = React.useState(user.phoneNumber);
