@@ -2,7 +2,6 @@
 import React from "react";
 import { getAuth } from "firebase/auth";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import updateUser from "@/firebase/auth/update";
 
 function Page() {
