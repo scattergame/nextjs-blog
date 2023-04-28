@@ -25,7 +25,7 @@ function Page() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className=" dark:bg-gray-500 bg-amber-100 max-w-md w-full p-8 rounded-lg shadow-lg">
+      <div className=" dark:bg-gray-500 bg-amber-100 max-w-lg w-full p-8 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold mb-8 text-center">Sign In</h1>
         <form onSubmit={handleForm}>
           <div className="mb-4">

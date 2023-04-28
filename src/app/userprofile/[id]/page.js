@@ -10,6 +10,9 @@ function Page() {
   const router = useRouter();
   const auth = getAuth();
   const user = auth.currentUser;
+  if (user === null) {
+    return router.push("/");
+  }
   const [displayName, setdisplayName] = React.useState(user.displayName);
   const [photoURL, setphotoURL] = React.useState(user.photoURL);
   const [phone, setphone] = React.useState(user.phoneNumber);
@@ -33,7 +36,7 @@ function Page() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="max-w-md w-full bg-white shadow-md rounded-md overflow-hidden">
+      <div className="max-w-lg w-full bg-white shadow-md rounded-md overflow-hidden">
         <div className="bg-gray-200 h-40 flex items-center justify-center">
           <img
             className="h-32 w-32 object-cover rounded-full"
