@@ -36,7 +36,7 @@ function Page() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="max-w-lg w-full bg-white shadow-md rounded-md overflow-hidden">
+      <div className="max-w-lg w-full mx-8 bg-white shadow-md rounded-md overflow-hidden">
         <div className="bg-gray-200 h-40 flex items-center justify-center">
           <img
             className="h-32 w-32 object-cover rounded-full"
@@ -45,7 +45,7 @@ function Page() {
           />
         </div>
         <form onSubmit={handleForm}>
-          <div className="mb-4">
+          <div className="mb-4 mx-10">
             <label
               className="block text-gray-700 font-bold mb-2"
               htmlFor="displayName"
@@ -60,7 +60,7 @@ function Page() {
               className="appearance-none dark:bg-gray-700 dark:text-gray-100 border rounded w-full py-2 px-3 leading-tight"
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 mx-10">
             <label
               className="block text-gray-700 font-bold mb-2"
               htmlFor="email"
@@ -74,7 +74,7 @@ function Page() {
               disabled
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 mx-10">
             <label
               className="block text-gray-700 font-bold mb-2"
               htmlFor="userId"
@@ -89,12 +89,14 @@ function Page() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-          >
-            Update
-          </button>
+          <div className="flex items-center justify-center mb-4">
+            <button
+              type="submit"
+              className=" bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Update
+            </button>
+          </div>
         </form>
       </div>
     </div>
