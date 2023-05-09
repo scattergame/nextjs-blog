@@ -2,6 +2,7 @@
 import { MenuItem } from "./menuitem";
 import { AiFillHome } from "react-icons/ai";
 import { BsInfoCircleFill } from "react-icons/bs";
+import { IoMdAddCircle } from "react-icons/io";
 import Link from "next/link";
 import { DarkModeSwitch } from "./darkModeswitch";
 import { Signin_signout } from "./signin_signout";
@@ -12,6 +13,11 @@ export const Header = () => {
       <div className="flex">
         <MenuItem title="HOME" address="/" Icon={AiFillHome} />
         <MenuItem title="ABOUT" address="/about" Icon={BsInfoCircleFill} />
+        <MenuItem
+          title="Create Post"
+          address="/createpost"
+          Icon={IoMdAddCircle}
+        />
       </div>
       <div className="flex space-x-6 items-center">
         <DarkModeSwitch />
